@@ -1,0 +1,20 @@
+ALGORITHM algo-checkpoint
+VAR
+    para:CHAR;
+    nbr,vnbr,wnbr:=0:INTEGER;
+BEGIN
+REPEAT
+write("enter a paragraf")
+Read(para)
+nbr:=nbr+1
+     IF (para:='a' OR para='e' OR para='i' OR para='o' OR para='u' OR para) THEN
+      vnbr:=vnbr+1;
+    END_IF
+    IF (wnbr=' ' OR wnbr='.') THEN
+        wnbr:=wnbr+1;
+    END_IF
+UNTIL (para:=.)
+Write("the number of caracters is",nbr)
+Write("the number of voiels is",vnbr)
+Write("the number of words is",wnbr)
+END
